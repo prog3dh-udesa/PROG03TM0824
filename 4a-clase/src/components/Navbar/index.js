@@ -4,7 +4,18 @@ import './styles.css'
 
 
 const opciones = [
-    "ADMIN", "Pages", "Charts", "Tables", "Adopcion gatos"
+    {
+        nombre:"Inicio",
+        ruta: '/'
+    }, 
+    {
+        nombre: "About us",
+        ruta: "/aboutus"
+    },
+    {
+        nombre: "Adopcion gatos",
+        ruta:"/adopcion"
+    }
 ]
 
 function Navbar() {
@@ -12,7 +23,7 @@ function Navbar() {
         <nav>
             <ul className="main-nav">
                {
-                opciones.map((elm) => <Opcion name={elm} /> )
+                opciones.map((elm) => <Opcion data={elm} /> )
                }
             </ul>
             <ul className="user">
