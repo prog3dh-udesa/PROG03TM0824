@@ -10,11 +10,11 @@ const opciones = [
     }, 
     {
         nombre: "About us",
-        ruta: "/aboutus"
+        ruta: "/about"
     },
     {
-        nombre: "Adopcion gatos",
-        ruta:"/adopcion"
+        nombre: "Personajes",
+        ruta:"/personajes"
     }
 ]
 
