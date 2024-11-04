@@ -1,6 +1,6 @@
 import { Text, View, TouchableOpacity } from 'react-native'
 import React, { Component } from 'react'
-import FormLogin from '../components/FormLogin'
+
 export default class Login extends Component {
     constructor(props){
         super(props)
@@ -18,9 +18,6 @@ export default class Login extends Component {
     return (
       <View>
         <Text>Estamos en el login</Text>
-        <View>
-          <FormLogin />
-        </View>
         <TouchableOpacity
             onPress={() => this.irARegister()}
         >

@@ -1,6 +1,7 @@
-import { Text, View, TouchableOpacity, TextInput, StyleSheet } from 'react-native'
+import { Text, View, TouchableOpacity, TouchableOpacityBase } from 'react-native'
 import React, { Component } from 'react'
-import FormRegister from '../components/FormRegister'
+import FormularioRegister from '../components/FormularioRegister'
+
 export default class Register extends Component {
     constructor(props){
         super(props)
@@ -17,9 +18,7 @@ export default class Register extends Component {
     return (
       <View>
         <Text>Register</Text>
-        <View>
-          <FormRegister navigation={this.props.navigation} />
-        </View>
+        <FormularioRegister navigation={this.props.navigation} />
         <TouchableOpacity
         onPress={()=> this.irAlLogin()}
         >
@@ -35,11 +34,3 @@ export default class Register extends Component {
     )
   }
 }
-
-const styles = StyleSheet.create({
-  input: {
-    borderWidth: 2,
-    borderColor:'green',
-    marginBottom: 10
-  }
-})
