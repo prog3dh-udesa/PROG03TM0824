@@ -12,10 +12,10 @@ export default class Posteo extends Component {
     }
 
     componentDidMount(){
-        let estaMiLike = this.props.infoPosteo.data.likes.includes(auth.currentUser.email)
-        if(estaMiLike){
-            this.setState({estaMiLike: true})
-        }
+        // let estaMiLike = this.props.infoPosteo.data.likes.includes(auth.currentUser.email)
+        // if(estaMiLike){
+        //     this.setState({estaMiLike: true})
+        // }
     }
 
     darLike(){

@@ -9,10 +9,11 @@ export default class NewPost extends Component {
         this.state={
             descPost: '',
             urlImagen:'',
+            pasoCamara: true,
         }
     }
 
-    crearPosteo(descPost, urlImagen){
+    crearPosteo(descPost){
         if(descPost === ''){
             return
         }
@@ -20,9 +21,6 @@ export default class NewPost extends Component {
             owner: auth.currentUser.email,
             createdAt: Date.now(),
             descripcion: descPost,
-            likes:[],
-            comentarios:[],
-            urlImagen: urlImagen
         })
         .then(() => this.props.navigation.navigate('home'))
         .catch(err => console.log(err))
